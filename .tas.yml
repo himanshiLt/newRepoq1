@@ -1,0 +1,15 @@
+framework: jest
+tier: large
+postMerge: 
+  pattern: 
+    - "./src/*.test.js"
+preMerge:
+  pattern:
+    - "./src/*.test.js"
+preRun:
+     command:
+        - npm install
+postRun:
+     command:
+        - node --version
+version: 2.1
